@@ -4,7 +4,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import { toast, ToastContainer } from 'react-toastify';
 import axios from 'axios';
 
-const myAPIKey = 'acb2f0692b6527f3fd9d7129bebbfff6';
+const myAPIKey = '';
 
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const fetchWeatherData = async () => {
       try {
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${myAPIKey}&units=metric`);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=acb2f0692b6527f3fd9d7129bebbfff6&units=metric`);
         setWeatherData(response.data);
       } catch (error) {
         toast.error("Error fetching weather data:", error.message);

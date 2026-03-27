@@ -4,8 +4,6 @@ import Dashboard from './components/Dashboard/Dashboard';
 import { toast, ToastContainer } from 'react-toastify';
 import axios from 'axios';
 
-const myAPIKey = '';
-
 
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
